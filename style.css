@@ -1,0 +1,126 @@
+body {
+    width: 95%;
+    margin: 2.5rem;
+}
+
+table {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#city,
+#region,
+#organisation,
+#hostname {
+    padding-left: 12rem;
+}
+
+#map-top {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#map-bottom {
+    margin-top: 2rem;
+    font-size: 30px;
+}
+
+#btn {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: #000;
+    color: white;
+    width: 15rem;
+    height: 3rem;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background: #000;
+    color: #999;
+}
+
+#card {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 41rem;
+    height: 8rem;
+    padding: 1rem;
+    font-size: 20px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    display: grid;
+    row-gap: 50px;
+}
+
+#post-office-list {
+    font-size: 30px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#search-box input {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    height: 2rem;
+    width: 95%;
+}
+
+#search-input::placeholder {
+    width: max-content;
+    margin: 20px;
+    padding-left: 20px;
+    background-image: url("search-icon.svg");
+    background-repeat: no-repeat;
+    text-indent: 10px;
+}
+
+#search-input {
+    display: none;
+    padding: 10px 40px 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    outline: none;
+}
+
+#search-input::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+.loading {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #f3f3f3;
+    border-left: 4px solid #34b4db;
+    border-right: 4px solid #34b4db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.searchbar>span {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
